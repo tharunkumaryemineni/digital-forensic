@@ -1,133 +1,131 @@
-# Ex.No.1 - Evidence Acquisition Using FTK Imager
+# 🔍 Evidence Acquisition Using AccessData FTK Imager
 
-## Aim
+![Tool](https://img.shields.io/badge/Tool-FTK%20Imager-blue)
+![Category](https://img.shields.io/badge/Category-Digital%20Forensics-critical)
+![Platform](https://img.shields.io/badge/Platform-Windows-0078D6)
 
-To acquire digital forensic evidence using **AccessData FTK Imager** by capturing both **volatile memory (RAM)** and **non-volatile memory (Disk Image)** while maintaining evidence integrity.
-
----
-
-## Objective
-
-- Learn the basics of FTK Imager.
-- Acquire volatile memory from a running system.
-- Acquire non-volatile memory (disk image).
-- Understand different forensic image formats.
-- Verify evidence integrity using hash values.
+**Ex. No. 1 — Digital Forensics Lab**
 
 ---
 
-## Software Required
+## 📑 Table of Contents
 
-- AccessData FTK Imager
-- Windows Operating System
-- Storage device (USB/HDD)
-- Write Blocker (recommended for disk acquisition)
-
----
-
-## About FTK Imager
-
-FTK (Forensic Toolkit) Imager is a digital forensic tool developed by **AccessData**. It is used to create forensic images of storage devices and capture volatile memory for forensic investigations. The tool helps investigators preserve digital evidence without modifying the original data. :contentReference[oaicite:0]{index=0}
-
----
-
-## Types of Evidence Acquisition
-
-### 1. Volatile Memory Acquisition
-Captures the contents of the system's RAM while the computer is running.
-
-### 2. Non-Volatile Memory Acquisition
-Creates a forensic image of storage devices such as hard disks, SSDs, USB drives, and partitions. :contentReference[oaicite:1]{index=1}
+- [Description](#-description)
+- [Ways to Use FTK Imager](#-ways-to-use-ftk-imager)
+- [Acquiring Volatile Memory (RAM)](#-acquiring-volatile-memory-ram)
+- [Acquiring Non-Volatile Memory (Disk Image)](#-acquiring-non-volatile-memory-disk-image)
+  - [Collecting Physical Drives](#collecting-physical-drives)
+  - [Disk Image Formats](#disk-image-formats)
+  - [Case Details & Image Destination](#case-details--image-destination)
+  - [Verifying and Starting Acquisition](#verifying-and-starting-acquisition)
+  - [Results](#results)
 
 ---
 
-# Procedure
+## 📖 Description
 
-## Part A – Volatile Memory Acquisition
+**Forensic Toolkit (FTK)** is a computer forensics software product made by **AccessData**, distributed as a Windows-based commercial tool. The same development team also maintains **FTK Imager** — a free version with fewer features, purpose-built for forensic investigations. FTK Imager is capable of both **acquiring** and **analyzing** computer forensic evidence.
 
-1. Open **FTK Imager**.
-2. Click **Capture Memory**.
-3. Select the destination folder.
-4. (Optional) Include:
-   - Pagefile
-   - AD1 file
-5. Click **Capture Memory**.
-6. Wait for the acquisition process to complete.
-7. The memory dump is saved with the `.mem` extension. :contentReference[oaicite:2]{index=2}
+The evidence FTK Imager can acquire splits into two main categories:
 
----
+- Acquiring **volatile memory**
+- Acquiring **non-volatile memory** (hard disk)
 
-## Part B – Non-Volatile Memory Acquisition
+## 🖥️ Ways to Use FTK Imager
 
-1. Open **FTK Imager**.
-2. Select **Create Disk Image**.
-3. Choose the source type:
-   - Physical Drive
-   - Logical Drive
-   - Image File
-   - Folder Contents
-   - CD/DVD
-4. Select the drive to acquire.
-5. Choose the image format.
-6. Enter the case details.
-7. Select the destination folder.
-8. Specify image filename and fragment size.
-9. Enable **Verify Images After Creation**.
-10. Click **Start**.
-11. Wait until acquisition completes.
-12. Review the generated acquisition report. :contentReference[oaicite:3]{index=3}
+| Method | Description |
+|---|---|
+| **Portable version** | Run directly from a USB pen drive or HDD on the evidence machine. Most frequently used for **live data acquisition**, where the evidence PC/laptop is already switched on. |
+| **Installed version** | Installed on the investigator's laptop. The source disk is mounted via a **write blocker**, which prevents any writes to the evidence disk while allowing read-only access — preserving the integrity of the source. |
 
 ---
 
-# Supported Image Formats
+## 🧠 Acquiring Volatile Memory (RAM)
 
-| Format | Description |
-|---------|-------------|
-| RAW (dd) | Standard raw forensic image format used by most forensic tools. |
-| SMART | Designed primarily for Linux forensic imaging. |
-| E01 | EnCase proprietary compressed forensic image format with metadata and MD5 hash. |
-| AFF | Open Advanced Forensic Format (AFF/AFF4). | :contentReference[oaicite:4]{index=4}
+FTK Imager can collect the complete volatile memory (RAM) of a live computer.
 
----
+1. Open FTK Imager and navigate to the volatile memory icon (**Capture Memory**), then set a destination path and filename.
 
-# Verification
+   ![Capture Memory icon and Memory Capture dialog](images/01-capture-memory-icon.jpg)
 
-After the acquisition process:
+   > **Note:** FTK Imager provides options to include the **pagefile** and create an **AD1** file when acquiring volatile memory.
+   >
+   > - **Pagefile** (`pagefile.sys`) — used by Windows as an extension of physical RAM once available memory is exceeded. It sits on the `C:` partition and often holds valuable data, so it's recommended to capture it alongside the RAM.
+   > - **AD1 file** — FTK Imager's own image file format, optional, for later use by the investigator.
 
-- FTK Imager generates an acquisition report.
-- Hash values are calculated.
-- Matching hash values confirm evidence integrity. :contentReference[oaicite:5]{index=5}
+2. Click **Capture Memory** to start acquiring the volatile memory.
 
----
+   ![Memory capture in progress](images/02-memory-progress.jpg)
 
-# Result
-
-Successfully acquired:
-
-- Volatile Memory (RAM)
-- Non-Volatile Memory (Disk Image)
-
-using **AccessData FTK Imager**, and verified the integrity of the acquired evidence using hash verification.
+   > **Note:** Once acquisition completes, the destination folder will contain the acquired memory with a **`.mem`** file extension.
 
 ---
 
-# Conclusion
+## 💾 Acquiring Non-Volatile Memory (Disk Image)
 
-FTK Imager is an effective forensic acquisition tool that enables investigators to securely capture volatile and non-volatile digital evidence while preserving data integrity through forensic imaging and hash verification.
+The same tool can also be used to collect a full disk image.
+
+1. Open FTK Imager and navigate to **Create Disk Image**.
+
+   ![Create Disk Image icon](images/03-create-disk-image-icon.jpg)
+
+2. Select the source you need to acquire.
+
+   ![Select Source dialog](images/04-select-source.jpg)
+
+   > **Note:** FTK Imager can acquire **physical drives**, **logical drives** (partitions), **image files**, the **contents of a folder**, or **CDs/DVDs**. External HDDs should be connected through a write blocker and acquired using the **Logical Drive** option, selecting the mounted HDD as a partition.
+
+### Collecting Physical Drives
+
+1. Select the **Physical Drive** option.
+2. Select the drive you need to acquire and click **Finish**.
+
+   ![Select Drive dialog](images/05-select-physical-drive.jpg)
+
+### Disk Image Formats
+
+| Format | Notes |
+|---|---|
+| **Raw (dd)** | The image format most commonly used by modern analysis tools. Contains no headers, metadata, or magic values. Skipped or unreadable memory ranges are padded, which helps maintain spatial integrity (relative offsets among data). |
+| **SMART** | Designed for Linux file systems. Keeps disk images as pure bitstreams with optional compression. Starts with a standard 13-byte header followed by sections, each with a type string, a 64-bit offset to the next section, a 64-bit size, padding, and a CRC. |
+| **E01** | A proprietary format developed by Guidance Software's **EnCase**. Compresses the image file. Header and footer store case information — including an MD5 hash of the entire bitstream, acquisition date/time, examiner's name, notes, and an optional password. |
+| **AFF** (Advanced Forensic Format) | Developed by Simson Garfinkel and Basis Technology; latest implementation is **AFF4**. Designed to avoid locking investigators into a proprietary format that could prevent proper analysis later. |
+
+### Case Details & Image Destination
+
+1. Enter the case details.
+
+   ![Evidence Item Information dialog](images/06-evidence-item-information.jpg)
+
+2. Add an image destination (where the image file will be saved), an image filename, and a fragment size.
+
+   ![Select Image Destination dialog](images/07-select-image-destination.jpg)
+
+   > **Image Fragment Size (MB):** Splits the image file into multiple fragments saved to the same destination. Set this to **`0`** if you want a single, unfragmented image file instead.
+
+### Verifying and Starting Acquisition
+
+1. Select **Verify images after they are created**. This verifies the hash values once the image has been created — recommended to ensure integrity, though it increases acquisition time, especially for large disk images.
+
+   ![Verify images after they are created option](images/08-verify-images-option.jpg)
+
+2. Click **Start** to begin acquiring.
+
+   ![Creating image progress](images/09-creating-image-progress.jpg)
+
+### Results
+
+Once acquisition is complete, FTK Imager generates a text file containing all the information it has acquired, and confirms the hash verification.
+
+![Image created successfully](images/10-image-created-successfully.png)
+
+![Image summary showing computed and verified hash values](images/11-image-summary-hash.png)
+
+✅ **Hash values are matched.**
 
 ---
 
-## Author
-
-**Name:** Tharun  
-**Subject:** Digital Forensics Laboratory  
-**Experiment:** Ex.No.1 – Evidence Acquisition Using FTK Imager
-
----
-
-## License
-
-This repository is created for educational and academic purposes.
+<sub>Digital Forensics Lab · Ex. No. 1</sub>
 <img width="500" height="472" alt="SS 1" src="https://github.com/user-attachments/assets/7117c2cf-a29f-4ba8-91f4-0c7bbd36bf4c" />
 <img width="505" height="390" alt="SS 2" src="https://github.com/user-attachments/assets/1d75c2fb-23a1-4fcc-98b2-0e7e73c8da6e" />
 <img width="1438" height="1094" alt="SS 3" src="https://github.com/user-attachments/assets/95b47f88-5282-4d4c-bda4-a22bde22a059" />
