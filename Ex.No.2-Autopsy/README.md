@@ -1,4 +1,4 @@
-# Ex.No.5 - Using Autopsy to Create a Case and Import Evidence
+# Ex.No . 02 - Using Autopsy to Create a Case and Import Evidence
 
 ## Aim
 
