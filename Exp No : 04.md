@@ -140,18 +140,9 @@ Check for:
 
 ## 🧪 Sample Email Header
 
-```text
-Received: from mail.example.com (mail.example.com [192.0.2.1])
- by mail.receiver.com with ESMTP id u29si8604336pjs.40.2023.08.10.07.00.16;
- Thu, 10 Aug 2023 07:00:16 -0700 (PDT)
-
-Received: by mail.example.com with SMTP id a1mr1243772ywh.51;
- Thu, 10 Aug 2023 07:00:15 -0700 (PDT)
-
-Message-ID: <CA+7eu=4pSeXgQ@mail.example.com><img width="1910" height="912" alt="Screenshot 2026-08-24 234628" src="https://github.com/user-attachments/assets/98e6b93e-f315-4332-b949-469974862df3" />
-<img width="1883" height="912" alt="Screenshot 2026-08-25 095359" src="https://github.com/user-attachments/assets/5b2b4da4-b582-46e3-9e84-ae7524d770f0" />
-<img width="1553" height="817" alt="Screenshot 2026-08-24 235240" src="https://github.com/user-attachments/assets/67f543bd-4443-43b3-b2e0-d5fd933679e4" />
-<img width="1560" height="317" alt="Screenshot 2026-08-24 234921" src="https://github.com/user-attachments/assets/5d398af1-36dc-430f-b4d0-64802eb265a9" />
-<img width="922" height="193" alt="Screenshot 2026-08-24 234701" src="https://github.com/user-attachments/assets/0a917e1d-7004-45f2-9398-bf6ee202fb77" />
-<img width="1902" height="905" alt="Screenshot 2026-08-24 234654" src="https://github.com/user-attachments/assets/10c9bfb6-85df-4ddb-9004-8bfacdd34eb1" />
-<img width="1910" height="912" alt="Screenshot 2026-08-24 234628" src="https://github.com/user-attachments/assets/9a89e2d8-0bee-46ba-b839-0289ce5b4986" />
+<img width="1553" height="817" alt="Screenshot 2026-08-24 235240" src="https://github.com/user-attachments/assets/e7900a30-1d06-4d65-8fa7-6b55d272a6cb" />
+<img width="1560" height="317" alt="Screenshot 2026-08-24 234921" src="https://github.com/user-attachments/assets/097f3bec-57a5-4b79-b2bb-24d5a8712f35" />
+<img width="922" height="193" alt="Screenshot 2026-08-24 234701" src="https://github.com/user-attachments/assets/8308e0f4-ed35-4e46-bd58-018ee0da497e" />
+<img width="1902" height="905" alt="Screenshot 2026-08-24 234654" src="https://github.com/user-attachments/assets/6d5c19e9-ba7f-4e75-921b-d3e77a937e46" />
+<img width="1910" height="912" alt="Screenshot 2026-08-24 234628" src="https://github.com/user-attachments/assets/457562c2-4d76-447e-aa6b-26e954e50842" />
+<img width="1883" height="912" alt="Screenshot 2026-08-25 095359" src="https://github.com/user-attachments/assets/de323c93-67b6-4b9d-a55a-c18681f177b2" />
