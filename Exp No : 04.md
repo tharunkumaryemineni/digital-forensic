@@ -140,9 +140,9 @@ Check for:
 
 ## 🧪 Sample Email Header
 
-<img width="1553" height="817" alt="Screenshot 2026-08-24 235240" src="https://github.com/user-attachments/assets/e7900a30-1d06-4d65-8fa7-6b55d272a6cb" />
-<img width="1560" height="317" alt="Screenshot 2026-08-24 234921" src="https://github.com/user-attachments/assets/097f3bec-57a5-4b79-b2bb-24d5a8712f35" />
-<img width="922" height="193" alt="Screenshot 2026-08-24 234701" src="https://github.com/user-attachments/assets/8308e0f4-ed35-4e46-bd58-018ee0da497e" />
-<img width="1902" height="905" alt="Screenshot 2026-08-24 234654" src="https://github.com/user-attachments/assets/6d5c19e9-ba7f-4e75-921b-d3e77a937e46" />
-<img width="1910" height="912" alt="Screenshot 2026-08-24 234628" src="https://github.com/user-attachments/assets/457562c2-4d76-447e-aa6b-26e954e50842" />
-<img width="1883" height="912" alt="Screenshot 2026-08-25 095359" src="https://github.com/user-attachments/assets/de323c93-67b6-4b9d-a55a-c18681f177b2" />
+<img width="1910" height="912" alt="Screenshot 2026-08-24 234628" src="https://github.com/user-attachments/assets/c698e389-615f-4a9e-8abd-4f88c3671a43" />
+<img width="1902" height="905" alt="Screenshot 2026-08-24 234654" src="https://github.com/user-attachments/assets/9eefbd77-a48b-431d-9159-07dc300f448b" />
+<img width="922" height="193" alt="Screenshot 2026-08-24 234701" src="https://github.com/user-attachments/assets/c06f53b3-98ab-4b28-b9a3-da2b2a1ad0bc" />
+<img width="1560" height="317" alt="Screenshot 2026-08-24 234921" src="https://github.com/user-attachments/assets/13049c39-0345-4233-afb5-55baad4b1efc" />
+<img width="1553" height="817" alt="Screenshot 2026-08-24 235240" src="https://github.com/user-attachments/assets/f7311425-4941-433e-8413-497aede2eaca" />
+<img width="1883" height="912" alt="Screenshot 2026-08-25 095359" src="https://github.com/user-attachments/assets/267d91f7-8153-4d07-860d-860fa59347df" />
