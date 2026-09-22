@@ -186,9 +186,9 @@ Autopsy provides an efficient and user-friendly environment for digital forensic
 This repository is intended for educational and academic purposes only.
 <img width="1610" height="977" alt="ss 1" src="https://github.com/user-attachments/assets/4595f60c-4134-4124-a20a-0db4902c30bb" />
 <img width="1070" height="672" alt="ss (2)" src="https://github.com/user-attachments/assets/d9c0b1f9-bf81-4f04-bb03-fe5fadf849a0" />
-<img width="1072" height="668" alt="ss 3" src="https://github.com/user-attachments/assets/4a3684e5-10ee-40cc-9c40-d359c7079314" />
+<img width="1588" height="991" alt="3 A" src="https://github.com/user-attachments/assets/dae5c7b8-64a0-44d5-84e6-cbf026ea5eb9" />
 <img width="1072" height="672" alt="ss 4" src="https://github.com/user-attachments/assets/3242b1dc-b723-42ad-971b-9d3bff243ce1" />
 <img width="1711" height="897" alt="ss 5" src="https://github.com/user-attachments/assets/05f47838-6c19-47a4-a09a-18ca44d63da3" />
 <img width="937" height="571" alt="ss 6" src="https://github.com/user-attachments/assets/7545f57f-7099-40f1-94cd-419503923629" />
-<img width="1008" height="842" alt="ss 7" src="https://github.com/user-attachments/assets/27785244-df8a-43fd-a37f-15a7f459c067" />
+<img width="1372" height="1146" alt="6 A" src="https://github.com/user-attachments/assets/16a27a85-afcd-41fc-8aad-f9853c022606" />
 <img width="902" height="542" alt="ss 8" src="https://github.com/user-attachments/assets/6dbafaac-149b-4c3b-8a09-40d0a49a3f9f" />
