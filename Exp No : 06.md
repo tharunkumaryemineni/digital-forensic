@@ -35,9 +35,6 @@ It provides different tools for:
 - OSFMount (Optional)
 - Disk Image Files
 
-### Evidence Files
-
-```text
 4Dell Latitude CPi.E01
 4Dell Latitude CPi.E02
 
