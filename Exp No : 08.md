@@ -124,4 +124,4 @@ StegExpose can be used as a digital forensics tool to analyze images and identif
 <img width="478" height="239" alt="8 c" src="https://github.com/user-attachments/assets/82a2a080-20dd-49d2-b474-7f6aece1d292" />
 <img width="331" height="165" alt="8 d" src="https://github.com/user-attachments/assets/c1ddef0a-d7fc-412b-bd7b-c3f62958cae2" />
 <img width="959" height="349" alt="8 e" src="https://github.com/user-attachments/assets/2b742911-5390-4a45-abc6-438d7874ea26" />
-<img width="959" height="349" alt="8 e - Copy" src="https://github.com/user-attachments/assets/44ad8a88-d6e9-415f-b201-7adff1a4552c" />
+<img width="479" height="205" alt="8 g" src="https://github.com/user-attachments/assets/ccbb4bc8-31fd-407b-af4a-f74e19b9bc6e" />
