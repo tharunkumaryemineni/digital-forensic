@@ -40,7 +40,7 @@ While Wireshark is capturing packets, open the authorized test website in a brow
 
 After submitting the login form, return to Wireshark and apply the following display filter:
 
-```text
+
 http
 <img width="1724" height="912" alt="ss 5" src="https://github.com/user-attachments/assets/c593bc15-8e5c-48f9-bf7d-a34164912a53" />
 <img width="1917" height="1018" alt="ss 4" src="https://github.com/user-attachments/assets/1ab85403-67cc-44d6-848b-18764ffbd0d2" />
